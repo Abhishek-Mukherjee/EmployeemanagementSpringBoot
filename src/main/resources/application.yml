@@ -1,0 +1,22 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: employeemanagement2
+  jpa:
+    hibernate:
+      ddl-auto: update #create-drop
+    #database-platform: org.hibernate.dialect.MySQL8Dialect
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+  datasource:
+    #url: jdbc:mysql://localhost:3306/employeemanagement2
+    url: jdbc:h2:mem:employeemanagement2
+    #username: root
+    username: sa
+    #password: root
+    password: password
+    #driver-class-name: com.mysql.cj.jdbc.Driverorg.h2.Driver
+    driver-class-name: org.h2.Driver
+
+
